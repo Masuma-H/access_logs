@@ -1,1 +1,32 @@
-hello world!
+# []
+
+## Problem Statement
+The Privacy Analyzer program identifies suspicious network activities to protect confidential information. By detecting anomalies like unusual data transfers or unexpected locations, it helps prevent data breaches which enhance security and create a safer internet for companies and individuals.
+
+## Dataset
+- Source: [data/CloudWatch_Traffic_Web_Attack.csv]
+- Description: [The dataset contains the following information:
+  - Bytes received (`bytes_in`) and sent (`bytes_out`)
+  - Source IP country codes (`src_ip_country_code`)
+  - Protocols used (e.g., HTTPS)]
+- Size: [Number of records/features]
+- Quality: [The data contain a mix of suspicious record and normal records]
+
+## Features
+1. Interactive Analysis
+   - Feature 1: View Dataset: Users can view a statistical summary of the dataset through the mean, standard deviation, and count of key features.
+   - Feature 2: Analyze Suspicious Activity: Filters traffic data to show records marked as suspicious based on the conditions.
+
+   
+2. Data Processing
+   - Feature 1: Filtering: Allows filtering of data by specific parameters like country code, bytes exchanged, and protocol type to isolate suspicious activity.
+
+3. Visualizations
+   - Type 1: Bar Graphs: Visualizes the amount of data received (`bytes_in`) from each country, highlighting potential threats.
+
+## Program Structure
+project/
+├── README.md
+├── main.py        # Main program with all code
+└── data/          # Data directory
+    └── dataset.csv
